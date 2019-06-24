@@ -13,8 +13,8 @@ describe('store functions', () => {
   });
 
   it('updates the current state with a given key value pair', () => {
-    const state = getState();
     updateState('toys', 80);
+    const state = getState();
     expect(state).toEqual({
       shirts: 5,
       pants: 10,
