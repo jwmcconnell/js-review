@@ -9,4 +9,13 @@ describe('dog create function', () => {
       weight: '20lbs'
     });
   });
+
+  it('returns a dog with an int for age after string is input', () => {
+    const dog = createDog('fido', '6', '15lbs');
+    expect(dog).toEqual({
+      name: 'fido',
+      age: 6,
+      weight: '15lbs'
+    });
+  });
 });
