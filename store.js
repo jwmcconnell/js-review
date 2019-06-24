@@ -8,4 +8,8 @@ const state = {
 
 const getState = () => (state);
 
-module.exports = { getState };
+const updateState = (key, value) => {
+  state[key] = value;
+};
+
+module.exports = { getState, updateState };
